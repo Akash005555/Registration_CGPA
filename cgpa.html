@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Average Calculator</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #87CEFA; 
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 100px;
+            text-align: center;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            color: #fff;
+            background-color: #007bff; 
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            transition: background-color 0.3s, transform 0.2s; 
+            width: 200px;
+        }
+
+        button:hover {
+            background-color: #0056b3; 
+            transform: scale(1.05); 
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+
+        <form action="result.php" method="post">
+            <label for="mark1">CSE-3101 : </label>
+            <input type="number" name="mark1" min="0" max="100" required><br><br>
+
+            <label for="mark2">CSE-3102 : </label>
+            <input type="number" name="mark2" min="0" max="100" required><br><br>
+
+            <label for="mark3">CSE-3103 : </label>
+            <input type="number" name="mark3" min="0" max="100" required><br><br>
+
+            <label for="mark4">CSE-3104 : </label>
+            <input type="number" name="mark4" min="0" max="100" required><br><br>
+
+            <label for="mark5">HUM-3141 : </label>
+            <input type="number" name="mark5" min="0" max="100" required><br><br>
+
+            <button type="submit">Calculate CGPA</button>
+        </form>
+    </div>
+
+</body>
+</html>
